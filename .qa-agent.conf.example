@@ -1,0 +1,14 @@
+# Copy this file to .qa-agent.conf and customize commands for your project.
+
+# Required quality checks
+LINT_COMMAND="echo 'Set your lint command (example: npm run lint)'"
+TEST_COMMAND="echo 'Set your test command (example: npm test)'"
+
+# Optional: advanced review checks (SAST, formatting, static analysis, etc.)
+REVIEW_COMMAND="echo 'Set modern review command (example: npm run typecheck && npm audit --audit-level=high)'"
+
+# Optional: if empty, TEST_COMMAND is reused after merge simulation
+REGRESSION_TEST_COMMAND=""
+
+# Optional deploy command used only with --deploy
+DEPLOY_COMMAND="echo 'Set deploy command (example: ./deploy.sh)'"
